@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+
+<html lang="pl"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Contact - Micro-Serwis Electronics Diagnostics</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&amp;family=Inter:wght@300;400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              "primary-fixed": "#cee5ff",
+              "surface-bright": "#f9f9f9",
+              "error-container": "#ffdad6",
+              "surface-container": "#eeeeee",
+              "tertiary-fixed-dim": "#c8c6c6",
+              "on-error": "#ffffff",
+              "primary": "#006097",
+              "on-surface": "#1a1c1c",
+              "on-secondary": "#ffffff",
+              "outline-variant": "#bfc7d3",
+              "secondary-container": "#c6c8fd",
+              "surface-tint": "#00639b",
+              "on-tertiary": "#ffffff",
+              "surface-container-highest": "#e2e2e2",
+              "secondary": "#585b88",
+              "on-primary-fixed-variant": "#004a76",
+              "on-tertiary-fixed": "#1b1c1c",
+              "on-primary-fixed": "#001d33",
+              "inverse-surface": "#2f3131",
+              "surface-container-high": "#e8e8e8",
+              "surface-variant": "#e2e2e2",
+              "primary-container": "#007abe",
+              "secondary-fixed": "#e0e0ff",
+              "tertiary": "#5c5c5c",
+              "on-secondary-container": "#4f5280",
+              "tertiary-fixed": "#e4e2e1",
+              "inverse-primary": "#97cbff",
+              "on-error-container": "#93000a",
+              "on-secondary-fixed-variant": "#40436f",
+              "on-primary-container": "#fdfcff",
+              "on-tertiary-container": "#fefcfb",
+              "on-surface-variant": "#3f4851",
+              "secondary-fixed-dim": "#c0c2f7",
+              "on-secondary-fixed": "#141741",
+              "outline": "#6f7882",
+              "surface-container-lowest": "#ffffff",
+              "inverse-on-surface": "#f1f1f1",
+              "on-primary": "#ffffff",
+              "surface": "#f9f9f9",
+              "primary-fixed-dim": "#97cbff",
+              "background": "#f9f9f9",
+              "on-tertiary-fixed-variant": "#474747",
+              "surface-dim": "#dadada",
+              "error": "#ba1a1a",
+              "on-background": "#1a1c1c",
+              "tertiary-container": "#757474",
+              "surface-container-low": "#f3f3f3"
+            },
+            fontFamily: {
+              "headline": ["Space Grotesk"],
+              "body": ["Inter"],
+              "label": ["Inter"]
+            },
+            borderRadius: {"DEFAULT": "0.125rem", "lg": "0.25rem", "xl": "0.5rem", "full": "0.75rem"},
+          },
+        },
+      }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .glass-effect {
+            backdrop-filter: blur(20px);
+            background: rgba(255, 255, 255, 0.7);
+        }
+    </style>
+</head>
+<body class="bg-background font-body text-on-surface selection:bg-primary-fixed selection:text-on-primary-fixed">
+<!-- TopNavBar -->
+<header class="fixed top-0 w-full z-50 bg-white/80 dark:bg-slate-900/80 backdrop-blur-xl shadow-sm h-20">
+<nav class="flex justify-between items-center max-w-7xl mx-auto px-8 h-full">
+<div class="text-2xl font-bold tracking-tighter text-sky-800 dark:text-sky-300 font-headline uppercase">
+                Micro-Serwis
+            </div>
+<div class="hidden md:flex items-center gap-8 font-headline font-medium uppercase tracking-wider text-sm">
+<a class="text-slate-600 dark:text-slate-400 hover:text-sky-500 transition-colors duration-200" href="#">Home</a>
+<a class="text-slate-600 dark:text-slate-400 hover:text-sky-500 transition-colors duration-200" href="#">Services</a>
+<a class="text-slate-600 dark:text-slate-400 hover:text-sky-500 transition-colors duration-200" href="#">About</a>
+<a class="text-sky-700 dark:text-sky-400 border-b-2 border-sky-600 pb-1 hover:text-sky-500 transition-colors duration-200" href="#">Contact</a>
+</div>
+<div class="flex items-center gap-4">
+<span class="hidden md:block font-headline font-medium text-sky-700 dark:text-sky-400">+48 123 456 789</span>
+<span class="material-symbols-outlined text-sky-700 dark:text-sky-400">location_on</span>
+</div>
+</nav>
+</header>
+<main class="pt-32 pb-20 px-6 max-w-7xl mx-auto">
+<!-- Hero Section -->
+<section class="mb-20">
+<div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-end">
+<div>
+<span class="text-primary font-headline font-bold uppercase tracking-[0.2em] text-sm block mb-4">Laboratory Location</span>
+<h1 class="text-5xl md:text-7xl font-headline font-bold text-on-surface leading-tight tracking-tighter">
+                        Find Us at the <br/><span class="text-primary">Tech Hub.</span>
+</h1>
+</div>
+<div class="pb-2">
+<p class="text-lg text-on-surface-variant leading-relaxed max-w-md">
+                        Our specialized electronics diagnostic facility is strategically located near major transit routes for your convenience.
+                    </p>
+</div>
+</div>
+</section>
+<!-- Bento Grid Contact Info & Map -->
+<div class="grid grid-cols-1 md:grid-cols-12 gap-6 mb-20">
+<!-- Address & Landmarks Card -->
+<div class="md:col-span-4 bg-surface-container-low rounded-xl p-8 flex flex-col justify-between">
+<div>
+<div class="w-12 h-12 bg-primary-container rounded-full flex items-center justify-center mb-8">
+<span class="material-symbols-outlined text-on-primary-container">location_on</span>
+</div>
+<h3 class="text-2xl font-headline font-bold mb-4">Location Details</h3>
+<address class="not-italic text-on-surface-variant space-y-2 mb-8">
+<p class="text-xl font-semibold text-on-surface">ul. Królewska 7</p>
+<p>Warszawa, Poland</p>
+</address>
+<div class="space-y-4">
+<div class="flex items-start gap-4 p-4 bg-surface-container-lowest rounded-lg">
+<span class="material-symbols-outlined text-primary">local_taxi</span>
+<div>
+<p class="font-bold text-sm uppercase tracking-wider">Taxi Stand</p>
+<p class="text-sm text-on-surface-variant">Located directly adjacent to our entrance for easy drop-offs.</p>
+</div>
+</div>
+<div class="flex items-start gap-4 p-4 bg-surface-container-lowest rounded-lg">
+<span class="material-symbols-outlined text-primary">train</span>
+<div>
+<p class="font-bold text-sm uppercase tracking-wider">Train Station</p>
+<p class="text-sm text-on-surface-variant">A short 3-minute walk from the main terminal exit.</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- Large Interactive Map Placeholder -->
+<div class="md:col-span-8 h-[500px] relative rounded-xl overflow-hidden group">
+<img alt="Map showing ul. Krolewska 7 near taxi and train station" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" data-alt="Technical map visualization of urban streets with a central blue pin marker highlighting a specific repair shop location near transit hubs" data-location="Warszawa, Królewska 7" src="https://lh3.googleusercontent.com/aida-public/AB6AXuA3vzUy4vvYNgLKQ8kc31k_lxl-871Vzqn12QfFwvdVzsOQCLkGHesKd__oIj4pOaPAS_zRRGjVSy-305M7Xfynje8Sm6o_VMYpF9IUwsg7bRw8MG2JZh7AVH0lYvK_Lgx0gNJ3Oojwpa7gdGaHMVaovvO8y7e90VZ0nK_MRN2Z-QYFxPda66he2KBtZ8flysd9f69i5M7AXTpNG8iihoFL4PS2miQVX8Wvh3kjRpFGFU5wo96dJl2d7eSNs5r43C0X4vYIDFqZcUTx"/>
+<div class="absolute inset-0 bg-primary/10 pointer-events-none"></div>
+<div class="absolute bottom-6 right-6 glass-effect p-6 rounded-xl shadow-lg border border-white/20">
+<p class="font-headline font-bold text-primary mb-1">Micro-Serwis Diagnostics</p>
+<p class="text-xs text-on-surface-variant uppercase tracking-widest font-semibold">Precision Laboratory Entrance</p>
+</div>
+</div>
+<!-- Contact Details Card -->
+<div class="md:col-span-6 bg-surface-container rounded-xl p-8 grid grid-cols-1 sm:grid-cols-2 gap-8">
+<div>
+<h4 class="font-headline font-bold text-sm uppercase tracking-widest text-primary mb-6">Direct Line</h4>
+<div class="flex items-center gap-4 mb-4">
+<span class="material-symbols-outlined text-primary">call</span>
+<span class="text-xl font-semibold">+48 123 456 789</span>
+</div>
+<p class="text-sm text-on-surface-variant">Available for urgent technical inquiries during laboratory hours.</p>
+</div>
+<div>
+<h4 class="font-headline font-bold text-sm uppercase tracking-widest text-primary mb-6">Digital Support</h4>
+<div class="flex items-center gap-4 mb-4">
+<span class="material-symbols-outlined text-primary">mail</span>
+<span class="text-xl font-semibold">service@micro.pl</span>
+</div>
+<p class="text-sm text-on-surface-variant">Expect a diagnostic estimate within 4 business hours.</p>
+</div>
+</div>
+<!-- Opening Hours Card -->
+<div class="md:col-span-6 bg-primary text-on-primary rounded-xl p-8 flex flex-col justify-center">
+<h4 class="font-headline font-bold text-sm uppercase tracking-widest text-primary-fixed mb-6">Laboratory Hours</h4>
+<div class="space-y-3">
+<div class="flex justify-between border-b border-white/10 pb-2">
+<span>Monday — Friday</span>
+<span class="font-bold">09:00 — 18:00</span>
+</div>
+<div class="flex justify-between border-b border-white/10 pb-2">
+<span>Saturday</span>
+<span class="font-bold">10:00 — 14:00</span>
+</div>
+<div class="flex justify-between opacity-60">
+<span>Sunday</span>
+<span class="font-bold uppercase text-xs tracking-widest">Closed</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Repair Inquiry Form Section -->
+<section class="bg-surface-container-low rounded-xl overflow-hidden">
+<div class="grid grid-cols-1 lg:grid-cols-2">
+<div class="p-12 lg:p-20">
+<h2 class="text-4xl font-headline font-bold mb-6">Submit a <span class="text-primary">Diagnostic Request.</span></h2>
+<p class="text-on-surface-variant mb-10 leading-relaxed">
+                        Provide the technical specifications of your device. Our engineers will review the symptoms and prepare a preliminary diagnostic path before you arrive.
+                    </p>
+<form class="space-y-6">
+<div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+<div class="space-y-2">
+<label class="text-xs font-bold uppercase tracking-widest text-on-surface-variant ml-1">Client Name</label>
+<input class="w-full bg-surface-container-highest border-none rounded-xl p-4 focus:ring-2 focus:ring-primary transition-all duration-200" placeholder="Jan Kowalski" type="text"/>
+</div>
+<div class="space-y-2">
+<label class="text-xs font-bold uppercase tracking-widest text-on-surface-variant ml-1">Email Address</label>
+<input class="w-full bg-surface-container-highest border-none rounded-xl p-4 focus:ring-2 focus:ring-primary transition-all duration-200" placeholder="jan@example.pl" type="email"/>
+</div>
+</div>
+<div class="space-y-2">
+<label class="text-xs font-bold uppercase tracking-widest text-on-surface-variant ml-1">Device Model &amp; Issue</label>
+<textarea class="w-full bg-surface-container-highest border-none rounded-xl p-4 focus:ring-2 focus:ring-primary transition-all duration-200" placeholder="Describe the electronic symptoms..." rows="4"></textarea>
+</div>
+<button class="w-full py-4 bg-gradient-to-r from-primary to-primary-container text-white font-headline font-bold uppercase tracking-widest rounded-xl hover:opacity-90 transition-all duration-300" type="submit">
+                            Initiate Inquiry
+                        </button>
+</form>
+</div>
+<div class="hidden lg:block relative">
+<img alt="Electronics engineer working with precision tools" class="absolute inset-0 w-full h-full object-cover" data-alt="Close-up of a high-tech electronics repair station with professional soldering iron, microscope, and circuit board components in a clean lab setting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCqg7gbY75k2ZWqeop7u3A7TKU4dcDS-4qkdCUVThfaxWlSZG192NuJU5M4SvcO5wRkXj7JBj8HpstLn7bpT3E-Y7wU6abvLzS3_q87_PgHXL9EB1111P9UlexvpEEbNskoQHUrWkaiiJuo--UlhVFwV0BeFeAEIIkZ43AuScS0VDQVOnmhg_BJaMT5jsa-4PSICJ2oYwcwsr-KKO8tXYFbfDuJb495NWU0BxS6-HU4KZ1ZzAXAbhegRsUNEHqR-Oq_S-uzlC1bFeYB"/>
+<div class="absolute inset-0 bg-primary/20 mix-blend-multiply"></div>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="bg-slate-50 dark:bg-slate-950 border-t border-slate-200 dark:border-slate-800 w-full py-12 px-8">
+<div class="grid grid-cols-1 md:grid-cols-4 gap-12 max-w-7xl mx-auto">
+<div class="col-span-1 md:col-span-1">
+<div class="font-['Space_Grotesk'] font-bold text-sky-900 dark:text-white text-xl mb-4">
+                    Micro-Serwis
+                </div>
+<p class="font-['Inter'] text-sm text-slate-500 dark:text-slate-400">
+                    Professional Electronics Diagnostics. Restoring precision to your technology.
+                </p>
+</div>
+<div class="col-span-1">
+<h4 class="font-headline font-bold text-xs uppercase tracking-widest mb-6">Navigation</h4>
+<ul class="space-y-3 font-['Inter'] text-sm text-slate-500">
+<li><a class="hover:text-sky-600 dark:hover:text-sky-300 underline-offset-4 hover:underline transition-all" href="#">Home</a></li>
+<li><a class="hover:text-sky-600 dark:hover:text-sky-300 underline-offset-4 hover:underline transition-all" href="#">Services</a></li>
+<li><a class="hover:text-sky-600 dark:hover:text-sky-300 underline-offset-4 hover:underline transition-all" href="#">About</a></li>
+</ul>
+</div>
+<div class="col-span-1">
+<h4 class="font-headline font-bold text-xs uppercase tracking-widest mb-6">Legal</h4>
+<ul class="space-y-3 font-['Inter'] text-sm text-slate-500">
+<li><a class="hover:text-sky-600 dark:hover:text-sky-300 underline-offset-4 hover:underline transition-all" href="#">Privacy Policy</a></li>
+<li><a class="hover:text-sky-600 dark:hover:text-sky-300 underline-offset-4 hover:underline transition-all" href="#">Terms of Service</a></li>
+</ul>
+</div>
+<div class="col-span-1">
+<h4 class="font-headline font-bold text-xs uppercase tracking-widest mb-6">Social</h4>
+<div class="flex gap-4">
+<a class="text-sky-700 dark:text-sky-400 hover:text-sky-500 transition-all" href="#">Facebook</a>
+<a class="text-sky-700 dark:text-sky-400 hover:text-sky-500 transition-all" href="#">Instagram</a>
+<a class="text-sky-700 dark:text-sky-400 hover:text-sky-500 transition-all" href="#">LinkedIn</a>
+</div>
+</div>
+</div>
+<div class="max-w-7xl mx-auto mt-12 pt-8 border-t border-slate-200 dark:border-slate-800">
+<p class="font-['Inter'] text-sm text-slate-500 dark:text-slate-400 text-center">
+                © 2024 Micro-Serwis. Professional Electronics Diagnostics.
+            </p>
+</div>
+</footer>
+</body></html>

@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+
+<html lang="pl"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Micro-Serwis — Serwis komputerów, laptopów i elektroniki | Grudziądz</title>
+<meta name="description" content="Profesjonalny serwis elektroniki użytkowej w Grudziądzu. Naprawiamy komputery, laptopy, konsole, telewizory i telefony. ul. Królewska 7, obok dworca PKP.">
+<meta name="keywords" content="serwis komputerowy Grudziądz, naprawa laptopów, naprawa telefonów, serwis konsol, naprawa telewizorów, Micro-Serwis">
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&amp;family=Inter:wght@300;400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              "primary-fixed": "#cee5ff",
+              "surface-bright": "#f9f9f9",
+              "error-container": "#ffdad6",
+              "surface-container": "#eeeeee",
+              "tertiary-fixed-dim": "#c8c6c6",
+              "on-error": "#ffffff",
+              "primary": "#006097",
+              "on-surface": "#1a1c1c",
+              "on-secondary": "#ffffff",
+              "outline-variant": "#bfc7d3",
+              "secondary-container": "#c6c8fd",
+              "surface-tint": "#00639b",
+              "on-tertiary": "#ffffff",
+              "surface-container-highest": "#e2e2e2",
+              "secondary": "#585b88",
+              "on-primary-fixed-variant": "#004a76",
+              "on-tertiary-fixed": "#1b1c1c",
+              "on-primary-fixed": "#001d33",
+              "inverse-surface": "#2f3131",
+              "surface-container-high": "#e8e8e8",
+              "surface-variant": "#e2e2e2",
+              "primary-container": "#007abe",
+              "secondary-fixed": "#e0e0ff",
+              "tertiary": "#5c5c5c",
+              "on-secondary-container": "#4f5280",
+              "tertiary-fixed": "#e4e2e1",
+              "inverse-primary": "#97cbff",
+              "on-error-container": "#93000a",
+              "on-secondary-fixed-variant": "#40436f",
+              "on-primary-container": "#fdfcff",
+              "on-tertiary-container": "#fefcfb",
+              "on-surface-variant": "#3f4851",
+              "secondary-fixed-dim": "#c0c2f7",
+              "on-secondary-fixed": "#141741",
+              "outline": "#6f7882",
+              "surface-container-lowest": "#ffffff",
+              "inverse-on-surface": "#f1f1f1",
+              "on-primary": "#ffffff",
+              "surface": "#f9f9f9",
+              "primary-fixed-dim": "#97cbff",
+              "background": "#f9f9f9",
+              "on-tertiary-fixed-variant": "#474747",
+              "surface-dim": "#dadada",
+              "error": "#ba1a1a",
+              "on-background": "#1a1c1c",
+              "tertiary-container": "#757474",
+              "surface-container-low": "#f3f3f3"
+            },
+            fontFamily: {
+              "headline": ["Space Grotesk"],
+              "body": ["Inter"],
+              "label": ["Inter"]
+            },
+            borderRadius: {"DEFAULT": "0.125rem", "lg": "0.25rem", "xl": "0.5rem", "full": "0.75rem"},
+          },
+        },
+      }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .glass-effect {
+            backdrop-filter: blur(20px);
+            background: rgba(255, 255, 255, 0.7);
+        }
+    </style>
+</head>
+<body class="bg-background font-body text-on-surface selection:bg-primary-fixed selection:text-on-primary-fixed">
+<!-- TopNavBar -->
+<header class="fixed top-0 w-full z-50 bg-white/80 backdrop-blur-xl shadow-sm h-20">
+<nav class="flex justify-between items-center max-w-7xl mx-auto px-8 h-full">
+<div class="text-2xl font-bold tracking-tighter text-sky-800 font-headline uppercase">
+                Micro-Serwis
+            </div>
+<div class="hidden md:flex items-center gap-8 font-headline font-medium uppercase tracking-wider text-sm">
+<a class="text-slate-600 hover:text-sky-500 transition-colors duration-200" href="index.html">Strona główna</a>
+<a class="text-slate-600 hover:text-sky-500 transition-colors duration-200" href="uslugi.html">Usługi</a>
+<a class="text-slate-600 hover:text-sky-500 transition-colors duration-200" href="o-nas.html">O nas</a>
+<a class="text-sky-700 border-b-2 border-sky-600 pb-1 hover:text-sky-500 transition-colors duration-200" href="kontakt.html">Kontakt</a>
+</div>
+<div class="flex items-center gap-4">
+<a href="tel:+48667547632" class="hidden md:block font-headline font-medium text-sky-700 hover:text-sky-500 transition-colors duration-200">+48 667 547 632</a>
+<span class="material-symbols-outlined text-sky-700">location_on</span>
+</div>
+</nav>
+</header>
+<main class="pt-32 pb-20 px-6 max-w-7xl mx-auto">
+<!-- Hero Section -->
+<section class="mb-20">
+<div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-end">
+<div>
+<span class="text-primary font-headline font-bold uppercase tracking-[0.2em] text-sm block mb-4">Lokalizacja serwisu</span>
+<h1 class="text-5xl md:text-7xl font-headline font-bold text-on-surface leading-tight tracking-tighter">
+                        Znajdź nas<br/>przy <span class="text-primary">dworcu.</span>
+</h1>
+</div>
+<div class="pb-2">
+<p class="text-lg text-on-surface-variant leading-relaxed max-w-md">
+                        Nasz serwis elektroniki mieści się w samym centrum Grudziądza, tuż obok dworca PKP — łatwy dojazd i wygodna lokalizacja dla każdego klienta.
+                    </p>
+</div>
+</div>
+</section>
+<!-- Bento Grid Contact Info & Map -->
+<div class="grid grid-cols-1 md:grid-cols-12 gap-6 mb-20">
+<!-- Address & Landmarks Card -->
+<div class="md:col-span-4 bg-surface-container-low rounded-xl p-8 flex flex-col justify-between">
+<div>
+<div class="w-12 h-12 bg-primary-container rounded-full flex items-center justify-center mb-8">
+<span class="material-symbols-outlined text-on-primary-container">location_on</span>
+</div>
+<h3 class="text-2xl font-headline font-bold mb-4">Jak do nas trafić</h3>
+<address class="not-italic text-on-surface-variant space-y-2 mb-8">
+<p class="text-xl font-semibold text-on-surface">ul. Królewska 7</p>
+<p>86-300 Grudziądz</p>
+</address>
+<div class="space-y-4">
+<div class="flex items-start gap-4 p-4 bg-surface-container-lowest rounded-lg">
+<span class="material-symbols-outlined text-primary">local_taxi</span>
+<div>
+<p class="font-bold text-sm uppercase tracking-wider">Postój taksówek</p>
+<p class="text-sm text-on-surface-variant">Znajduje się bezpośrednio naprzeciwko naszego wejścia.</p>
+</div>
+</div>
+<div class="flex items-start gap-4 p-4 bg-surface-container-lowest rounded-lg">
+<span class="material-symbols-outlined text-primary">train</span>
+<div>
+<p class="font-bold text-sm uppercase tracking-wider">Dworzec PKP</p>
+<p class="text-sm text-on-surface-variant">Zaledwie 2 minuty spacerem od wyjścia z dworca.</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- Mapa Google Maps -->
+<div class="md:col-span-8 h-[500px] relative rounded-xl overflow-hidden group">
+<iframe
+  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2398.5!2d18.7618!3d53.4830!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zNTPCsDI4JzU5LjAiTiAxOMKwNDUnNDIuNSJF!5e0!3m2!1spl!2spl!4v1"
+  width="100%"
+  height="100%"
+  style="border:0;"
+  allowfullscreen=""
+  loading="lazy"
+  referrerpolicy="no-referrer-when-downgrade"
+  title="Mapa — Micro-Serwis, ul. Królewska 7, Grudziądz">
+</iframe>
+<div class="absolute bottom-6 right-6 glass-effect p-6 rounded-xl shadow-lg border border-white/20 pointer-events-none">
+<p class="font-headline font-bold text-primary mb-1">Micro-Serwis</p>
+<p class="text-xs text-on-surface-variant uppercase tracking-widest font-semibold">Wejście do serwisu</p>
+</div>
+</div>
+<!-- Contact Details Card -->
+<div class="md:col-span-6 bg-surface-container rounded-xl p-8 grid grid-cols-1 sm:grid-cols-2 gap-8">
+<div>
+<h4 class="font-headline font-bold text-sm uppercase tracking-widest text-primary mb-6">Zadzwoń do nas</h4>
+<div class="flex items-center gap-4 mb-4">
+<span class="material-symbols-outlined text-primary">call</span>
+<a href="tel:+48667547632" class="text-xl font-semibold hover:text-primary transition-colors duration-200">+48 667 547 632</a>
+</div>
+<p class="text-sm text-on-surface-variant">Dzwoń w godzinach pracy serwisu — chętnie odpowiemy na pytania dotyczące naprawy.</p>
+</div>
+<div>
+<h4 class="font-headline font-bold text-sm uppercase tracking-widest text-primary mb-6">Napisz do nas</h4>
+<div class="flex items-center gap-4 mb-4">
+<span class="material-symbols-outlined text-primary">mail</span>
+<a href="mailto:marcin20201@gmail.com" class="text-xl font-semibold hover:text-primary transition-colors duration-200">marcin20201@gmail.com</a>
+</div>
+<p class="text-sm text-on-surface-variant">Opisz usterkę — odpiszemy z wstępną wyceną najszybciej jak to możliwe.</p>
+</div>
+</div>
+<!-- Opening Hours Card -->
+<div class="md:col-span-6 bg-primary text-on-primary rounded-xl p-8 flex flex-col justify-center">
+<h4 class="font-headline font-bold text-sm uppercase tracking-widest text-primary-fixed mb-6">Godziny otwarcia</h4>
+<div class="space-y-3">
+<div class="flex justify-between border-b border-white/10 pb-2">
+<span>Poniedziałek — Piątek</span>
+<span class="font-bold">08:00 — 16:00</span>
+</div>
+<div class="flex justify-between border-b border-white/10 pb-2">
+<span>Sobota</span>
+<span class="font-bold uppercase text-xs tracking-widest">Nieczynne</span>
+</div>
+<div class="flex justify-between opacity-60">
+<span>Niedziela</span>
+<span class="font-bold uppercase text-xs tracking-widest">Nieczynne</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Repair Inquiry Form Section -->
+<section class="bg-surface-container-low rounded-xl overflow-hidden">
+<div class="grid grid-cols-1 lg:grid-cols-2">
+<div class="p-12 lg:p-20">
+<h2 class="text-4xl font-headline font-bold mb-6">Wyślij <span class="text-primary">zgłoszenie serwisowe.</span></h2>
+<p class="text-on-surface-variant mb-10 leading-relaxed">
+                        Opisz problem ze swoim urządzeniem. Nasi technicy zapoznają się ze zgłoszeniem i przygotują wstępną diagnozę jeszcze przed Twoją wizytą.
+                    </p>
+<form class="space-y-6">
+<div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+<div class="space-y-2">
+<label class="text-xs font-bold uppercase tracking-widest text-on-surface-variant ml-1">Imię i nazwisko</label>
+<input class="w-full bg-surface-container-highest border-none rounded-xl p-4 focus:ring-2 focus:ring-primary transition-all duration-200" placeholder="Jan Kowalski" type="text"/>
+</div>
+<div class="space-y-2">
+<label class="text-xs font-bold uppercase tracking-widest text-on-surface-variant ml-1">Adres e-mail</label>
+<input class="w-full bg-surface-container-highest border-none rounded-xl p-4 focus:ring-2 focus:ring-primary transition-all duration-200" placeholder="jan@przyklad.pl" type="email"/>
+</div>
+</div>
+<div class="space-y-2">
+<label class="text-xs font-bold uppercase tracking-widest text-on-surface-variant ml-1">Urządzenie i opis usterki</label>
+<textarea class="w-full bg-surface-container-highest border-none rounded-xl p-4 focus:ring-2 focus:ring-primary transition-all duration-200" placeholder="Opisz model urządzenia i objawy usterki…" rows="4"></textarea>
+</div>
+<button class="w-full py-4 bg-gradient-to-r from-primary to-primary-container text-white font-headline font-bold uppercase tracking-widest rounded-xl hover:opacity-90 transition-all duration-300" type="submit">
+                            Wyślij zgłoszenie
+                        </button>
+</form>
+</div>
+<div class="hidden lg:block relative">
+<!-- STITCH: tu wstaw zdjęcie serwisanta przy pracy / stanowisko naprawcze -->
+<div class="absolute inset-0 w-full h-full bg-surface-container-high flex items-center justify-center">
+<span class="material-symbols-outlined text-outline text-6xl">build</span>
+</div>
+<div class="absolute inset-0 bg-primary/20 mix-blend-multiply"></div>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="bg-surface-container-low w-full py-12 px-8">
+<div class="grid grid-cols-1 md:grid-cols-4 gap-12 max-w-7xl mx-auto">
+<div class="col-span-1 md:col-span-1">
+<div class="font-headline font-bold text-sky-900 text-xl mb-4">
+                    Micro-Serwis
+                </div>
+<p class="text-sm text-on-surface-variant">
+                    Profesjonalny serwis elektroniki użytkowej w Grudziądzu. Naprawiamy komputery, laptopy, konsole, telewizory i telefony od ponad 10 lat.
+                </p>
+</div>
+<div class="col-span-1">
+<h4 class="font-headline font-bold text-xs uppercase tracking-widest mb-6">Nawigacja</h4>
+<ul class="space-y-3 text-sm text-on-surface-variant">
+<li><a class="hover:text-primary underline-offset-4 hover:underline transition-all" href="index.html">Strona główna</a></li>
+<li><a class="hover:text-primary underline-offset-4 hover:underline transition-all" href="uslugi.html">Usługi</a></li>
+<li><a class="hover:text-primary underline-offset-4 hover:underline transition-all" href="o-nas.html">O nas</a></li>
+</ul>
+</div>
+<div class="col-span-1">
+<h4 class="font-headline font-bold text-xs uppercase tracking-widest mb-6">Informacje prawne</h4>
+<ul class="space-y-3 text-sm text-on-surface-variant">
+<li><a class="hover:text-primary underline-offset-4 hover:underline transition-all" href="#">Polityka prywatności</a></li>
+<li><a class="hover:text-primary underline-offset-4 hover:underline transition-all" href="#">Regulamin</a></li>
+</ul>
+</div>
+<div class="col-span-1">
+<h4 class="font-headline font-bold text-xs uppercase tracking-widest mb-6">Znajdź nas</h4>
+<div class="flex gap-4">
+<!-- TODO: uzupełnić linki do social media -->
+<a class="text-sky-700 hover:text-sky-500 transition-all" href="#">Facebook</a>
+<a class="text-sky-700 hover:text-sky-500 transition-all" href="#">Instagram</a>
+</div>
+</div>
+</div>
+<div class="max-w-7xl mx-auto mt-12 pt-8">
+<p class="text-sm text-on-surface-variant text-center">
+                © 2026 Micro-Serwis. Serwis elektroniki użytkowej — Grudziądz.
+            </p>
+</div>
+</footer>
+</body></html>

@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+
+<html class="light" lang="pl"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<link href="https://fonts.googleapis.com/css2?family=Space_Grotesk:wght@300;400;500;600;700&amp;family=Inter:wght@300;400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              "primary-fixed": "#cee5ff",
+              "surface-bright": "#f9f9f9",
+              "error-container": "#ffdad6",
+              "surface-container": "#eeeeee",
+              "tertiary-fixed-dim": "#c8c6c6",
+              "on-error": "#ffffff",
+              "primary": "#006097",
+              "on-surface": "#1a1c1c",
+              "on-secondary": "#ffffff",
+              "outline-variant": "#bfc7d3",
+              "secondary-container": "#c6c8fd",
+              "surface-tint": "#00639b",
+              "on-tertiary": "#ffffff",
+              "surface-container-highest": "#e2e2e2",
+              "secondary": "#585b88",
+              "on-primary-fixed-variant": "#004a76",
+              "on-tertiary-fixed": "#1b1c1c",
+              "on-primary-fixed": "#001d33",
+              "inverse-surface": "#2f3131",
+              "surface-container-high": "#e8e8e8",
+              "surface-variant": "#e2e2e2",
+              "primary-container": "#007abe",
+              "secondary-fixed": "#e0e0ff",
+              "tertiary": "#5c5c5c",
+              "on-secondary-container": "#4f5280",
+              "tertiary-fixed": "#e4e2e1",
+              "inverse-primary": "#97cbff",
+              "on-error-container": "#93000a",
+              "on-secondary-fixed-variant": "#40436f",
+              "on-primary-container": "#fdfcff",
+              "on-tertiary-container": "#fefcfb",
+              "on-surface-variant": "#3f4851",
+              "secondary-fixed-dim": "#c0c2f7",
+              "on-secondary-fixed": "#141741",
+              "outline": "#6f7882",
+              "surface-container-lowest": "#ffffff",
+              "inverse-on-surface": "#f1f1f1",
+              "on-primary": "#ffffff",
+              "background": "#f9f9f9",
+              "on-tertiary-fixed-variant": "#474747",
+              "surface-dim": "#dadada",
+              "error": "#ba1a1a",
+              "on-background": "#1a1c1c",
+              "tertiary-container": "#757474",
+              "surface-container-low": "#f3f3f3"
+            },
+            fontFamily: {
+              "headline": ["Space Grotesk"],
+              "body": ["Inter"],
+              "label": ["Inter"]
+            },
+            borderRadius: {"DEFAULT": "0.125rem", "lg": "0.25rem", "xl": "0.5rem", "full": "0.75rem"},
+          },
+        },
+      }
+    </script>
+<style>
+      .material-symbols-outlined {
+        font-variation-settings: 'FILL' 0, 'wght' 300, 'GRAD' 0, 'opsz' 24;
+        vertical-align: middle;
+      }
+      .glass-card {
+        background: rgba(255, 255, 255, 0.7);
+        backdrop-filter: blur(20px);
+        -webkit-backdrop-filter: blur(20px);
+      }
+    </style>
+</head>
+<body class="bg-background text-on-surface font-body selection:bg-primary-fixed selection:text-on-primary-fixed">
+<!-- TopNavBar -->
+<nav class="fixed top-0 w-full z-50 bg-white/80 dark:bg-slate-900/80 backdrop-blur-xl shadow-sm">
+<div class="flex justify-between items-center max-w-7xl mx-auto px-8 h-20">
+<div class="text-3xl font-bold tracking-tighter text-sky-800 dark:text-sky-300 font-headline uppercase">
+            Micro-Serwis
+        </div>
+<div class="hidden md:flex items-center space-x-8">
+<a class="font-['Space_Grotesk'] font-medium uppercase tracking-wider text-sky-700 dark:text-sky-400 border-b-2 border-sky-600 pb-1 hover:text-sky-500 transition-colors duration-200" href="#">Start</a>
+<a class="font-['Space_Grotesk'] font-medium uppercase tracking-wider text-slate-600 dark:text-slate-400 hover:text-sky-500 transition-colors duration-200" href="#services">Usługi</a>
+<a class="font-['Space_Grotesk'] font-medium uppercase tracking-wider text-slate-600 dark:text-slate-400 hover:text-sky-500 transition-colors duration-200" href="#about">O nas</a>
+<a class="font-['Space_Grotesk'] font-medium uppercase tracking-wider text-slate-600 dark:text-slate-400 hover:text-sky-500 transition-colors duration-200" href="#contact">Kontakt</a>
+</div>
+<div class="flex items-center gap-4">
+<div class="hidden lg:flex items-center text-sky-700 dark:text-sky-400 font-headline font-bold">
+<span class="material-symbols-outlined mr-2" data-icon="call">call</span>
+                +48 123 456 789
+            </div>
+<button class="md:hidden text-primary">
+<span class="material-symbols-outlined text-3xl" data-icon="menu">menu</span>
+</button>
+</div>
+</div>
+</nav>
+<main class="pt-20">
+<!-- Hero Section -->
+<section class="relative min-h-[870px] flex items-center overflow-hidden bg-surface-container-low">
+<div class="absolute inset-0 z-0">
+<img alt="Micro-Serwis Electronics Repair" class="w-full h-full object-cover opacity-20 scale-105" data-alt="Close-up of a high-tech circuit board with glowing blue light paths and precision diagnostic tools in a clean laboratory environment" src="https://lh3.googleusercontent.com/aida-public/AB6AXuC2XbVTYmyu82_y5UjuARBi26lZMjdrtV2NMf8HQM6VXruwr9XtwXOjDXWCAVmXT8hkK7tUYz3ulQNR5so66fjcu0q5NXypwUzx9AnApKzGhSyNZPlGQHg7-XJR3Zs_Qd64b2r-XPEZCdqIcHiGYOelOz3eGHK6CHbIfTMYzJlRD1Mb0ZscdtxfJEV3C23cVUtEry49vJJxYmyvmy2F2P1-nCjLc0xyfwKrpOXqDw8XWFqBJEUVho0iluYOKCZXamPalTTMf2KHN1Qy"/>
+<div class="absolute inset-0 bg-gradient-to-r from-surface-bright via-surface-bright/80 to-transparent"></div>
+</div>
+<div class="max-w-7xl mx-auto px-8 relative z-10 w-full grid grid-cols-1 lg:grid-cols-12 gap-12">
+<div class="lg:col-span-8">
+<h1 class="font-headline font-bold text-5xl md:text-7xl lg:text-8xl text-primary leading-[0.9] tracking-tighter mb-8">
+<span class="text-sky-900">Micro-Serwis</span>: <br/>
+<span class="text-on-surface">Ponad 10 Lat Tradycji</span>
+</h1>
+<p class="text-body text-lg md:text-xl text-on-surface-variant max-w-2xl mb-10 leading-relaxed">
+                    Profesjonalna naprawa elektroniki. <span class="font-bold text-primary">Jedyny taki serwis w Grudziądzu z własną siedzibą stacjonarną od ponad 10 lat.</span> Znajdziesz nas przy ul. Królewskiej 7, naprzeciw postoju taksówek koło dworca PKP.
+                </p>
+<div class="flex flex-wrap gap-4">
+<a class="bg-gradient-to-r from-primary to-primary-container text-on-primary px-10 py-5 rounded-xl font-headline font-bold text-lg hover:shadow-lg transition-all active:opacity-70 flex items-center gap-3" href="tel:+48123456789">
+<span class="material-symbols-outlined" data-icon="call">call</span>
+                        Zadzwoń do nas
+                    </a>
+<a class="bg-surface-container-high text-on-surface px-10 py-5 rounded-xl font-headline font-bold text-lg hover:bg-surface-container-highest transition-all flex items-center gap-3" href="#services">
+                        Nasze Usługi
+                    </a>
+</div>
+</div>
+</div>
+</section>
+<!-- Service Grid (Bento Style) -->
+<section class="py-24 bg-surface-bright" id="services">
+<div class="max-w-7xl mx-auto px-8">
+<div class="mb-16">
+<h2 class="font-headline text-4xl font-bold tracking-tight text-primary mb-4 uppercase">Nasze Specjalizacje</h2>
+<div class="h-1 w-24 bg-primary rounded-full"></div>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-4 gap-6">
+<!-- Large Card 1 -->
+<div class="md:col-span-2 md:row-span-2 bg-surface-container-low p-10 rounded-xl relative overflow-hidden group">
+<div class="relative z-10 h-full flex flex-col justify-between">
+<div>
+<span class="material-symbols-outlined text-5xl text-primary mb-6" data-icon="laptop_mac">laptop_mac</span>
+<h3 class="font-headline text-3xl font-bold mb-4">Laptopy i Komputery</h3>
+<p class="text-on-surface-variant leading-relaxed text-lg">Kompleksowa diagnostyka, czyszczenie układów chłodzenia, wymiana matryc oraz profesjonalne odzyskiwanie danych.</p>
+</div>
+<div class="mt-8">
+<span class="text-primary font-bold flex items-center gap-2 group-hover:gap-4 transition-all">Szczegóły oferty <span class="material-symbols-outlined" data-icon="arrow_forward">arrow_forward</span></span>
+</div>
+</div>
+<div class="absolute -bottom-10 -right-10 opacity-5 group-hover:opacity-10 transition-opacity">
+<span class="material-symbols-outlined text-[200px]" data-icon="memory">memory</span>
+</div>
+</div>
+<!-- Small Card 1 (Key Service: Pads) -->
+<div class="md:col-span-2 bg-primary/10 border-2 border-primary/20 p-8 rounded-xl flex items-center gap-6 group hover:border-primary transition-all">
+<div class="bg-primary text-on-primary p-4 rounded-xl">
+<span class="material-symbols-outlined text-4xl" data-icon="stadia_controller">stadia_controller</span>
+</div>
+<div>
+<h3 class="font-headline text-xl font-bold text-primary">Naprawa Padów do Gier</h3>
+<p class="text-sm text-on-surface-variant">Unikalna usługa: usuwanie driftowania analogów, naprawa przycisków i gniazd ładowania.</p>
+</div>
+</div>
+<!-- Small Card 2 -->
+<div class="md:col-span-2 bg-secondary-container/30 p-8 rounded-xl flex items-center gap-6 group">
+<div class="bg-secondary-container p-4 rounded-xl text-on-secondary-container">
+<span class="material-symbols-outlined text-4xl" data-icon="sports_esports">sports_esports</span>
+</div>
+<div>
+<h3 class="font-headline text-xl font-bold">Serwis Konsol</h3>
+<p class="text-sm text-on-surface-variant">PS5, Xbox, Nintendo Switch - naprawy napędów, układów HDMI i zasilania.</p>
+</div>
+</div>
+<!-- Medium Card -->
+<div class="md:col-span-4 bg-surface-container p-8 rounded-xl flex flex-col md:flex-row items-center justify-between gap-8">
+<div class="flex items-center gap-6">
+<div class="bg-primary/20 text-primary p-4 rounded-full">
+<span class="material-symbols-outlined text-4xl" data-icon="smartphone">smartphone</span>
+</div>
+<div>
+<h3 class="font-headline text-2xl font-bold">Telefony i Tablety</h3>
+<p class="text-on-surface-variant">Ekspresowa wymiana wyświetlaczy, baterii oraz naprawa złączy ładowania.</p>
+</div>
+</div>
+<div class="flex items-center gap-6">
+<div class="bg-primary/20 text-primary p-4 rounded-full">
+<span class="material-symbols-outlined text-4xl" data-icon="tv">tv</span>
+</div>
+<div>
+<h3 class="font-headline text-2xl font-bold">TV i RTV</h3>
+<p class="text-on-surface-variant">Naprawa podświetlenia matryc oraz płyt głównych TV.</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- About Us Section -->
+<section class="py-24 bg-surface-container-low" id="about">
+<div class="max-w-7xl mx-auto px-8 grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+<div class="relative">
+<div class="aspect-square rounded-2xl overflow-hidden bg-slate-200 shadow-2xl">
+<img alt="Workshop Precision" class="w-full h-full object-cover" data-alt="Professional technician wearing anti-static gloves repairing a smartphone under a digital microscope in a bright laboratory" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD-Y5b0-1JoExuWIZ2eo2QXg-GSfsMIukFsAffpsHmg_hOQ9tjGu2qprUsurTNSt3XdgycIUgNFt22D_215JrpGYBOKKbawBgEW1IeohKJfpHBsSAjrbVKCt6N29IdIqj2U4Ly9U-LfV6c9GPL-yp8vbiFBWHtJa-qkqql10c9ZrQtH8ApvQxJ9Zj4VzibRUlpJY1Nw_Qzj9Lj4KvymOjlPR5Fc3stgEzBcQ_QJUEwSgRhnFvpt2Z4IDZNTnF8LDljDaklPqbc_ODz2"/>
+</div>
+<div class="absolute -bottom-8 -right-8 glass-card p-8 rounded-2xl shadow-xl max-w-xs border border-primary/20">
+<div class="text-primary font-headline text-5xl font-bold mb-2">10+ Lat</div>
+<div class="text-on-surface font-bold text-lg leading-tight uppercase tracking-tight">Stacjonarnie w Grudziądzu</div>
+</div>
+</div>
+<div>
+<h2 class="font-headline text-4xl md:text-5xl font-bold text-on-surface mb-8 tracking-tight">Postaw na lokalne doświadczenie w <span class="text-primary">Micro-Serwis</span>.</h2>
+<p class="text-lg text-on-surface-variant leading-relaxed mb-6">
+                    Jesteśmy jedynym takim serwisem w Grudziądzu, który od ponad dekady niezmiennie zaprasza do swojej własnej, stacjonarnej siedziby przy ul. Królewskiej 7. Nasza stabilność na rynku to Twoja gwarancja rzetelności.
+                </p>
+<ul class="space-y-4 mb-10">
+<li class="flex items-center gap-3">
+<span class="material-symbols-outlined text-primary" data-icon="check_circle" style="font-variation-settings: 'FILL' 1;">check_circle</span>
+<span class="font-medium text-on-surface">Własny warsztat stacjonarny - nie jesteśmy pośrednikiem</span>
+</li>
+<li class="flex items-center gap-3">
+<span class="material-symbols-outlined text-primary" data-icon="check_circle" style="font-variation-settings: 'FILL' 1;">check_circle</span>
+<span class="font-medium text-on-surface">Pisemna gwarancja na każdą naprawę</span>
+</li>
+<li class="flex items-center gap-3">
+<span class="material-symbols-outlined text-primary" data-icon="check_circle" style="font-variation-settings: 'FILL' 1;">check_circle</span>
+<span class="font-medium text-on-surface">Najszybsza diagnoza w mieście</span>
+</li>
+</ul>
+<div class="p-6 bg-surface-container-lowest rounded-xl border-l-4 border-primary">
+<p class="italic text-on-surface-variant">"Nasza pasja do technologii i ponad 10 lat praktyki w jednym miejscu to pewność, że Twoja elektronika jest w dobrych rękach."</p>
+</div>
+</div>
+</div>
+</section>
+<!-- Location Section -->
+<section class="py-24 bg-surface-bright" id="contact">
+<div class="max-w-7xl mx-auto px-8">
+<div class="grid grid-cols-1 lg:grid-cols-3 gap-12">
+<div class="lg:col-span-1">
+<h2 class="font-headline text-4xl font-bold mb-6">Znajdź nas</h2>
+<div class="space-y-6">
+<div class="flex items-start gap-4">
+<span class="material-symbols-outlined text-primary mt-1" data-icon="location_on">location_on</span>
+<div>
+<p class="font-bold text-lg">ul. Królewskiej 7</p>
+<p class="text-on-surface-variant">86-300 Grudziądz</p>
+<p class="text-sm text-primary mt-1 font-semibold uppercase">Naprzeciw postoju taksówek koło dworca PKP</p>
+</div>
+</div>
+<div class="flex items-start gap-4">
+<span class="material-symbols-outlined text-primary mt-1" data-icon="schedule">schedule</span>
+<div>
+<p class="font-bold">Godziny pracy</p>
+<p class="text-on-surface-variant text-sm">Pn - Pt: 09:00 - 17:00</p>
+<p class="text-on-surface-variant text-sm font-medium">Sobota: Zamknięte</p>
+</div>
+</div>
+<div class="flex items-start gap-4">
+<span class="material-symbols-outlined text-primary mt-1" data-icon="contact_page">contact_page</span>
+<div>
+<p class="font-bold">Telefon</p>
+<p class="text-primary text-xl font-bold">+48 123 456 789</p>
+</div>
+</div>
+</div>
+</div>
+<div class="lg:col-span-2 rounded-2xl overflow-hidden h-[400px] shadow-lg border border-surface-variant">
+<img alt="Lokalizacja Micro-Serwis Grudziądz" class="w-full h-full object-cover" data-alt="Stylized technical map of Grudziadz city center showing the area near the main train station and Królewska street" data-location="Grudziadz" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDTtL4j1i05B-QpAZ4_zj0hm6fCUFCAT3CoT8_W-He1fCEO2TD1BIAHfI-rBZxX08PBgc-kGELBbLcB1sRUgQ8QfG6BQDQD4FBNdA9ac2OZYVykdAfjF2mDYlk0ln4s6MZFmsPc2Tm2iw-xhTws_kCbgOU829pODMLAGc4ZEevvlDzjmTBCwLogQH3iSN2i-ew6G6nxFbk_4x0v6jKG5VPz2lXivnWgocK2gFjpVOJgGtB-cNFzgzJ2csj9d46WBkMnW0VIF0NJ0XX0"/>
+</div>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="w-full py-12 px-8 bg-slate-50 dark:bg-slate-950 border-t border-slate-200 dark:border-slate-800">
+<div class="grid grid-cols-1 md:grid-cols-4 gap-12 max-w-7xl mx-auto">
+<div class="md:col-span-1">
+<div class="font-['Space_Grotesk'] font-bold text-sky-900 dark:text-white text-2xl mb-4 uppercase">Micro-Serwis</div>
+<p class="font-['Inter'] text-sm text-slate-500 dark:text-slate-400">© 2024 Micro-Serwis. Profesjonalna Diagnostyka Elektroniki. Twój zaufany partner w Grudziądzu od ponad 10 lat.</p>
+</div>
+<div>
+<h4 class="font-headline font-bold mb-6 text-on-surface uppercase tracking-wider text-sm">Nasze Usługi</h4>
+<ul class="space-y-3 font-['Inter'] text-sm">
+<li><a class="text-slate-500 hover:text-sky-600 dark:hover:text-sky-300 transition-all" href="#">Laptopy i PC</a></li>
+<li><a class="text-slate-500 hover:text-sky-600 dark:hover:text-sky-300 transition-all font-bold text-primary" href="#">Naprawa Padów</a></li>
+<li><a class="text-slate-500 hover:text-sky-600 dark:hover:text-sky-300 transition-all" href="#">Konsole do gier</a></li>
+<li><a class="text-slate-500 hover:text-sky-600 dark:hover:text-sky-300 transition-all" href="#">Telefony i Smartfony</a></li>
+<li><a class="text-slate-500 hover:text-sky-600 dark:hover:text-sky-300 transition-all" href="#">Serwis TV / RTV</a></li>
+</ul>
+</div>
+<div>
+<h4 class="font-headline font-bold mb-6 text-on-surface uppercase tracking-wider text-sm">Social Media</h4>
+<ul class="space-y-3 font-['Inter'] text-sm">
+<li><a class="text-slate-500 hover:text-sky-600 dark:hover:text-sky-300 transition-all" href="#">Facebook</a></li>
+<li><a class="text-slate-500 hover:text-sky-600 dark:hover:text-sky-300 transition-all" href="#">Instagram</a></li>
+<li><a class="text-slate-500 hover:text-sky-600 dark:hover:text-sky-300 transition-all" href="#">Opinie Google</a></li>
+</ul>
+</div>
+<div>
+<h4 class="font-headline font-bold mb-6 text-on-surface uppercase tracking-wider text-sm">Informacje</h4>
+<ul class="space-y-3 font-['Inter'] text-sm">
+<li><a class="text-slate-500 hover:text-sky-600 dark:hover:text-sky-300 transition-all" href="#">Polityka Prywatności</a></li>
+<li><a class="text-slate-500 hover:text-sky-600 dark:hover:text-sky-300 transition-all" href="#">Regulamin serwisu</a></li>
+<li><a class="text-slate-500 hover:text-sky-600 dark:hover:text-sky-300 transition-all" href="#contact">Dane kontaktowe</a></li>
+</ul>
+</div>
+</div>
+</footer>
+</body></html>

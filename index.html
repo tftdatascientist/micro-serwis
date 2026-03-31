@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+
+<html lang="pl"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Micro-Serwis — Serwis komputerów, laptopów i elektroniki | Grudziądz</title>
+<meta name="description" content="Profesjonalny serwis elektroniki użytkowej w Grudziądzu. Naprawiamy komputery, laptopy, konsole, telewizory i telefony. ul. Królewska 7, obok dworca PKP.">
+<meta name="keywords" content="serwis komputerowy Grudziądz, naprawa laptopów, naprawa telefonów, serwis konsol, naprawa telewizorów, Micro-Serwis">
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&amp;family=Inter:wght@300;400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              "primary-fixed": "#cee5ff",
+              "surface-bright": "#f9f9f9",
+              "error-container": "#ffdad6",
+              "surface-container": "#eeeeee",
+              "tertiary-fixed-dim": "#c8c6c6",
+              "on-error": "#ffffff",
+              "primary": "#006097",
+              "on-surface": "#1a1c1c",
+              "on-secondary": "#ffffff",
+              "outline-variant": "#bfc7d3",
+              "secondary-container": "#c6c8fd",
+              "surface-tint": "#00639b",
+              "on-tertiary": "#ffffff",
+              "surface-container-highest": "#e2e2e2",
+              "secondary": "#585b88",
+              "on-primary-fixed-variant": "#004a76",
+              "on-tertiary-fixed": "#1b1c1c",
+              "on-primary-fixed": "#001d33",
+              "inverse-surface": "#2f3131",
+              "surface-container-high": "#e8e8e8",
+              "surface-variant": "#e2e2e2",
+              "primary-container": "#007abe",
+              "secondary-fixed": "#e0e0ff",
+              "tertiary": "#5c5c5c",
+              "on-secondary-container": "#4f5280",
+              "tertiary-fixed": "#e4e2e1",
+              "inverse-primary": "#97cbff",
+              "on-error-container": "#93000a",
+              "on-secondary-fixed-variant": "#40436f",
+              "on-primary-container": "#fdfcff",
+              "on-tertiary-container": "#fefcfb",
+              "on-surface-variant": "#3f4851",
+              "secondary-fixed-dim": "#c0c2f7",
+              "on-secondary-fixed": "#141741",
+              "outline": "#6f7882",
+              "surface-container-lowest": "#ffffff",
+              "inverse-on-surface": "#f1f1f1",
+              "on-primary": "#ffffff",
+              "surface": "#f9f9f9",
+              "primary-fixed-dim": "#97cbff",
+              "background": "#f9f9f9",
+              "on-tertiary-fixed-variant": "#474747",
+              "surface-dim": "#dadada",
+              "error": "#ba1a1a",
+              "on-background": "#1a1c1c",
+              "tertiary-container": "#757474",
+              "surface-container-low": "#f3f3f3"
+            },
+            fontFamily: {
+              "headline": ["Space Grotesk"],
+              "body": ["Inter"],
+              "label": ["Inter"]
+            },
+            borderRadius: {"DEFAULT": "0.125rem", "lg": "0.25rem", "xl": "0.5rem", "full": "0.75rem"},
+          },
+        },
+      }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .glass-effect {
+            backdrop-filter: blur(20px);
+            background: rgba(255, 255, 255, 0.7);
+        }
+    </style>
+</head>
+<body class="bg-background font-body text-on-surface selection:bg-primary-fixed selection:text-on-primary-fixed">
+<!-- TopNavBar -->
+<header class="fixed top-0 w-full z-50 bg-white/80 backdrop-blur-xl shadow-sm h-20">
+<nav class="flex justify-between items-center max-w-7xl mx-auto px-8 h-full">
+<div class="text-2xl font-bold tracking-tighter text-sky-800 font-headline uppercase">
+                Micro-Serwis
+            </div>
+<div class="hidden md:flex items-center gap-8 font-headline font-medium uppercase tracking-wider text-sm">
+<a class="text-sky-700 border-b-2 border-sky-600 pb-1 hover:text-sky-500 transition-colors duration-200" href="index.html">Strona główna</a>
+<a class="text-slate-600 hover:text-sky-500 transition-colors duration-200" href="uslugi.html">Usługi</a>
+<a class="text-slate-600 hover:text-sky-500 transition-colors duration-200" href="o-nas.html">O nas</a>
+<a class="text-slate-600 hover:text-sky-500 transition-colors duration-200" href="kontakt.html">Kontakt</a>
+</div>
+<div class="flex items-center gap-4">
+<a href="tel:+48667547632" class="hidden md:block font-headline font-medium text-sky-700 hover:text-sky-500 transition-colors duration-200">+48 667 547 632</a>
+<a href="kontakt.html"><span class="material-symbols-outlined text-sky-700">location_on</span></a>
+</div>
+</nav>
+</header>
+<main class="pt-32 pb-20 px-6 max-w-7xl mx-auto">
+
+<!-- Hero Section -->
+<section class="mb-20">
+<div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-end">
+<div>
+<span class="text-primary font-headline font-bold uppercase tracking-[0.2em] text-sm block mb-4">Serwis elektroniki w Grudziądzu</span>
+<h1 class="text-5xl md:text-7xl font-headline font-bold text-on-surface leading-tight tracking-tighter">
+                        Naprawiamy to,<br/>na czym Ci <span class="text-primary">zależy.</span>
+</h1>
+</div>
+<div class="pb-2">
+<p class="text-lg text-on-surface-variant leading-relaxed max-w-md">
+                        Komputery, laptopy, konsole, telewizory, telefony — profesjonalna diagnoza i naprawa w centrum Grudziądza. Szybko, fachowo i w przystępnej cenie.
+                    </p>
+<div class="flex flex-wrap gap-4 mt-8">
+<a href="kontakt.html" class="px-8 py-4 bg-gradient-to-r from-primary to-primary-container text-white font-headline font-bold uppercase tracking-widest rounded-xl hover:opacity-90 transition-all duration-300">Umów wizytę</a>
+<a href="uslugi.html" class="px-8 py-4 bg-surface-container-high text-on-surface font-headline font-bold uppercase tracking-widest rounded-xl hover:bg-surface-container-highest transition-all duration-300">Sprawdź usługi</a>
+</div>
+</div>
+</div>
+</section>
+
+<!-- Hero Image -->
+<section class="mb-20">
+<div class="w-full h-[400px] md:h-[500px] rounded-xl overflow-hidden relative">
+<!-- STITCH: tu wstaw zdjęcie wnętrza serwisu lub stanowiska naprawczego -->
+<div class="w-full h-full bg-surface-container-high flex items-center justify-center">
+<span class="material-symbols-outlined text-outline text-8xl">precision_manufacturing</span>
+</div>
+<div class="absolute inset-0 bg-primary/10 pointer-events-none"></div>
+</div>
+</section>
+
+<!-- Dlaczego my -->
+<section class="mb-20">
+<div class="text-center mb-12">
+<span class="text-primary font-headline font-bold uppercase tracking-[0.2em] text-sm block mb-4">Dlaczego my</span>
+<h2 class="text-4xl md:text-5xl font-headline font-bold tracking-tighter">Zaufaj <span class="text-primary">doświadczeniu.</span></h2>
+</div>
+<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+<div class="bg-surface-container-low rounded-xl p-8">
+<div class="w-12 h-12 bg-primary-container rounded-full flex items-center justify-center mb-6">
+<span class="material-symbols-outlined text-on-primary-container">verified</span>
+</div>
+<h3 class="font-headline font-bold text-lg mb-3">Ponad 10 lat doświadczenia</h3>
+<p class="text-sm text-on-surface-variant leading-relaxed">Setki naprawionych urządzeń i zadowolonych klientów z Grudziądza i okolic.</p>
+</div>
+<div class="bg-surface-container-low rounded-xl p-8">
+<div class="w-12 h-12 bg-primary-container rounded-full flex items-center justify-center mb-6">
+<span class="material-symbols-outlined text-on-primary-container">speed</span>
+</div>
+<h3 class="font-headline font-bold text-lg mb-3">Szybka realizacja</h3>
+<p class="text-sm text-on-surface-variant leading-relaxed">Większość napraw wykonujemy w ciągu 1–3 dni roboczych.</p>
+</div>
+<div class="bg-surface-container-low rounded-xl p-8">
+<div class="w-12 h-12 bg-primary-container rounded-full flex items-center justify-center mb-6">
+<span class="material-symbols-outlined text-on-primary-container">payments</span>
+</div>
+<h3 class="font-headline font-bold text-lg mb-3">Uczciwe ceny</h3>
+<p class="text-sm text-on-surface-variant leading-relaxed">Wycena przed naprawą, bez ukrytych kosztów.</p>
+</div>
+<div class="bg-surface-container-low rounded-xl p-8">
+<div class="w-12 h-12 bg-primary-container rounded-full flex items-center justify-center mb-6">
+<span class="material-symbols-outlined text-on-primary-container">build</span>
+</div>
+<h3 class="font-headline font-bold text-lg mb-3">Szeroki zakres usług</h3>
+<p class="text-sm text-on-surface-variant leading-relaxed">Od wymiany matrycy w laptopie po naprawę konsoli do gier.</p>
+</div>
+</div>
+</section>
+
+<!-- Nasze usługi -->
+<section class="bg-surface-container-low rounded-xl p-8 md:p-12 mb-20">
+<div class="text-center mb-12">
+<span class="text-primary font-headline font-bold uppercase tracking-[0.2em] text-sm block mb-4">Oferta</span>
+<h2 class="text-4xl md:text-5xl font-headline font-bold tracking-tighter">Nasze <span class="text-primary">usługi.</span></h2>
+</div>
+<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+<div class="bg-surface-container-lowest rounded-xl p-8">
+<div class="flex items-center gap-4 mb-4">
+<span class="material-symbols-outlined text-primary text-3xl">desktop_windows</span>
+<h3 class="font-headline font-bold text-lg">Komputery stacjonarne</h3>
+</div>
+<p class="text-sm text-on-surface-variant leading-relaxed">Diagnostyka, wymiana podzespołów, modernizacja i czyszczenie.</p>
+</div>
+<div class="bg-surface-container-lowest rounded-xl p-8">
+<div class="flex items-center gap-4 mb-4">
+<span class="material-symbols-outlined text-primary text-3xl">laptop_mac</span>
+<h3 class="font-headline font-bold text-lg">Laptopy</h3>
+</div>
+<p class="text-sm text-on-surface-variant leading-relaxed">Naprawa płyt głównych, wymiana matryc, klawiatur i gniazd ładowania.</p>
+</div>
+<div class="bg-surface-container-lowest rounded-xl p-8">
+<div class="flex items-center gap-4 mb-4">
+<span class="material-symbols-outlined text-primary text-3xl">sports_esports</span>
+<h3 class="font-headline font-bold text-lg">Konsole do gier</h3>
+</div>
+<p class="text-sm text-on-surface-variant leading-relaxed">Wymiana laserów, naprawa padów, diagnostyka i serwis konsol.</p>
+</div>
+<div class="bg-surface-container-lowest rounded-xl p-8">
+<div class="flex items-center gap-4 mb-4">
+<span class="material-symbols-outlined text-primary text-3xl">tv</span>
+<h3 class="font-headline font-bold text-lg">Telewizory</h3>
+</div>
+<p class="text-sm text-on-surface-variant leading-relaxed">Naprawa elektroniki, wymiana podświetlenia LED, diagnostyka.</p>
+</div>
+<div class="bg-surface-container-lowest rounded-xl p-8">
+<div class="flex items-center gap-4 mb-4">
+<span class="material-symbols-outlined text-primary text-3xl">smartphone</span>
+<h3 class="font-headline font-bold text-lg">Telefony</h3>
+</div>
+<p class="text-sm text-on-surface-variant leading-relaxed">Wymiana wyświetlaczy, naprawa usterek programowych i mechanicznych.</p>
+</div>
+<div class="bg-surface-container-lowest rounded-xl p-8">
+<div class="flex items-center gap-4 mb-4">
+<span class="material-symbols-outlined text-primary text-3xl">explore</span>
+<h3 class="font-headline font-bold text-lg">Nawigacje GPS</h3>
+</div>
+<p class="text-sm text-on-surface-variant leading-relaxed">Serwis i naprawa urządzeń nawigacyjnych.</p>
+</div>
+</div>
+</section>
+
+<!-- Zaufali nam -->
+<section class="mb-20">
+<div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+<div>
+<span class="text-primary font-headline font-bold uppercase tracking-[0.2em] text-sm block mb-4">Opinie klientów</span>
+<h2 class="text-4xl md:text-5xl font-headline font-bold tracking-tighter mb-6">Ponad 170 opinii<br/>w <span class="text-primary">Google.</span></h2>
+<p class="text-lg text-on-surface-variant leading-relaxed mb-8">Nasi klienci doceniają profesjonalizm, szybkość i uczciwość. Sprawdź opinie na Google Maps.</p>
+<div class="flex items-center gap-4">
+<div class="flex items-center gap-1 text-amber-500">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star_half</span>
+</div>
+<span class="font-headline font-bold text-2xl">4,6 / 5</span>
+</div>
+</div>
+<div class="bg-surface-container-low rounded-xl p-8 md:p-12">
+<div class="space-y-6">
+<div class="bg-surface-container-lowest rounded-xl p-6">
+<div class="flex items-center gap-2 text-amber-500 mb-3">
+<span class="material-symbols-outlined text-sm" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-sm" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-sm" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-sm" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-sm" style="font-variation-settings: 'FILL' 1;">star</span>
+</div>
+<p class="text-sm text-on-surface-variant italic leading-relaxed">„Szybka realizacja, przystępne ceny i fachowe doradztwo. Polecam każdemu!"</p>
+</div>
+<div class="bg-surface-container-lowest rounded-xl p-6">
+<div class="flex items-center gap-2 text-amber-500 mb-3">
+<span class="material-symbols-outlined text-sm" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-sm" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-sm" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-sm" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-sm" style="font-variation-settings: 'FILL' 1;">star</span>
+</div>
+<p class="text-sm text-on-surface-variant italic leading-relaxed">„Profesjonalna i miła obsługa. Indywidualne podejście do klienta."</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+
+<!-- CTA Section -->
+<section class="bg-primary text-on-primary rounded-xl p-12 md:p-20 text-center">
+<h2 class="text-3xl md:text-5xl font-headline font-bold tracking-tighter mb-6">Masz problem z urządzeniem?</h2>
+<p class="text-lg text-primary-fixed mb-10 max-w-xl mx-auto">Zadzwoń lub wyślij zgłoszenie online — przygotujemy wstępną diagnozę jeszcze przed Twoją wizytą.</p>
+<div class="flex flex-wrap justify-center gap-4">
+<a href="tel:+48667547632" class="px-8 py-4 bg-white text-primary font-headline font-bold uppercase tracking-widest rounded-xl hover:bg-primary-fixed transition-all duration-300">
+<span class="flex items-center gap-3"><span class="material-symbols-outlined">call</span> +48 667 547 632</span>
+</a>
+<a href="kontakt.html" class="px-8 py-4 bg-white/10 text-white font-headline font-bold uppercase tracking-widest rounded-xl hover:bg-white/20 transition-all duration-300 backdrop-blur-sm">
+Wyślij zgłoszenie
+</a>
+</div>
+</section>
+
+</main>
+<!-- Footer -->
+<footer class="bg-surface-container-low w-full py-12 px-8 mt-20">
+<div class="grid grid-cols-1 md:grid-cols-4 gap-12 max-w-7xl mx-auto">
+<div class="col-span-1 md:col-span-1">
+<div class="font-headline font-bold text-sky-900 text-xl mb-4">
+                    Micro-Serwis
+                </div>
+<p class="text-sm text-on-surface-variant">
+                    Profesjonalny serwis elektroniki użytkowej w Grudziądzu. Naprawiamy komputery, laptopy, konsole, telewizory i telefony od ponad 10 lat.
+                </p>
+</div>
+<div class="col-span-1">
+<h4 class="font-headline font-bold text-xs uppercase tracking-widest mb-6">Nawigacja</h4>
+<ul class="space-y-3 text-sm text-on-surface-variant">
+<li><a class="hover:text-primary underline-offset-4 hover:underline transition-all" href="index.html">Strona główna</a></li>
+<li><a class="hover:text-primary underline-offset-4 hover:underline transition-all" href="uslugi.html">Usługi</a></li>
+<li><a class="hover:text-primary underline-offset-4 hover:underline transition-all" href="o-nas.html">O nas</a></li>
+</ul>
+</div>
+<div class="col-span-1">
+<h4 class="font-headline font-bold text-xs uppercase tracking-widest mb-6">Informacje prawne</h4>
+<ul class="space-y-3 text-sm text-on-surface-variant">
+<li><a class="hover:text-primary underline-offset-4 hover:underline transition-all" href="#">Polityka prywatności</a></li>
+<li><a class="hover:text-primary underline-offset-4 hover:underline transition-all" href="#">Regulamin</a></li>
+</ul>
+</div>
+<div class="col-span-1">
+<h4 class="font-headline font-bold text-xs uppercase tracking-widest mb-6">Znajdź nas</h4>
+<div class="flex gap-4">
+<!-- TODO: uzupełnić linki do social media -->
+<a class="text-sky-700 hover:text-sky-500 transition-all" href="#">Facebook</a>
+<a class="text-sky-700 hover:text-sky-500 transition-all" href="#">Instagram</a>
+</div>
+</div>
+</div>
+<div class="max-w-7xl mx-auto mt-12 pt-8">
+<p class="text-sm text-on-surface-variant text-center">
+                © 2026 Micro-Serwis. Serwis elektroniki użytkowej — Grudziądz.
+            </p>
+</div>
+</footer>
+</body></html>
